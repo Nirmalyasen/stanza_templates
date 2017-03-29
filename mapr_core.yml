@@ -1,0 +1,33 @@
+environment:
+ #DOC mapr core version (required, must be 5.1.0 and above)
+ mapr_core_version: 5.2.0
+
+#DOC attributes for /config api
+config:
+ #DOC list of hosts we want to install packages on (required)
+ #DOC installer host must be one of the hosts in this list
+ hosts: []
+
+ #DOC user id, must be present for every host defined above (required)
+ ssh_id: root
+ #DOC Password based login (required, either this or private key based)
+ #DOC password to login to the machine via ssh
+ ssh_password: mapr
+ #DOC Private key based login, uncomment ssh_key_file
+ #DOC path to a file that contains the private key
+ #ssh_key_file: KEYFILE
+ #DOC ssh port (optional)
+ #ssh_port: 22
+ #DOC license type (M3 = community edition, M5 = enterprise edition)
+ license_type: M3
+ #DOC MEP version (required only for Mapr 5.2.0 and above)
+ mep_version: 2.0
+ #DOC list of disks to install packages on (required)
+ disks:
+   - /dev/xvdb
+ #DOC disk stripe width (optional)
+ #disk_stripe: 3
+ #DOC name of the cluster (required)
+ cluster_name: my.cluster.com
+ #DOC hashmap of services to be installed (optional)
+ services:
