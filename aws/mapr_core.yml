@@ -17,9 +17,6 @@ config:
      subnet_id: SUBNET_ID
      instance_type: TYPE
      instance_ami: AMI_ID
-   encryptedConfig:
-     aws_access_key: ACCESS_KEY
-     aws_secret_key: SECRET
 
  #DOC user id, must be present for every host defined above (required)
  ssh_id: SSH_USER
