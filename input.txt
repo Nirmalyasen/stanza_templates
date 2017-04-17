@@ -1,0 +1,4 @@
+config.mep_version=2.0
+config.cluster_name=nsen9.cluster.com
+config.clusterAdminPassword=password
+config.ssh_id=centos
